@@ -1,11 +1,11 @@
 <?php
-namespace League\Markua\Extension;
+namespace Danhunsaker\Markua\Extension;
 
 use League\CommonMark\Block\Parser as BlockParser;
 use League\CommonMark\Extension\CommonMarkCoreExtension;
-use League\Markua\Block\Parser as MarkuaBlockParser;
-use League\Markua\Block\Renderer\AsideRenderer;
-use League\Markua\Block\Renderer\IconBlockRenderer;
+use Danhunsaker\Markua\Block\Parser as MarkuaBlockParser;
+use Danhunsaker\Markua\Block\Renderer\AsideRenderer;
+use Danhunsaker\Markua\Block\Renderer\IconBlockRenderer;
 
 class MarkuaExtension extends CommonMarkCoreExtension
 {
@@ -37,8 +37,8 @@ class MarkuaExtension extends CommonMarkCoreExtension
     public function getBlockRenderers()
     {
         $renderers = parent::getBlockRenderers();
-        $renderers['League\Markua\Block\Element\Aside'] = new AsideRenderer();
-        $renderers['League\Markua\Block\Element\IconBlock'] = new IconBlockRenderer();
+        $renderers['Danhunsaker\Markua\Block\Element\Aside'] = new AsideRenderer();
+        $renderers['Danhunsaker\Markua\Block\Element\IconBlock'] = new IconBlockRenderer();
         return $renderers;
     }
 

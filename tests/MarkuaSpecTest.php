@@ -1,7 +1,7 @@
 <?php
-namespace League\Markua\Tests;
+namespace Danhunsaker\Markua\Tests;
 
-use League\Markua\MarkuaConverter;
+use Danhunsaker\Markua\MarkuaConverter;
 
 /**
  * Tests the parser against the Markua spec

@@ -5,6 +5,7 @@
  *
  * (c) Davey Shafik <me@daveyshafik.com
  * (c) Colin O'Dell <colinodell@gmail.com>
+ * (c) Dan Hunsaker <danhunsaker+markua@gmail.com>
  *
  * Original code based on the CommonMark JS reference parser (http://bitly.com/commonmarkjs)
  *  - (c) John MacFarlane
@@ -13,12 +14,12 @@
  * file that was distributed with this source code.
  */
 
-namespace League\Markua\Block\Parser;
+namespace Danhunsaker\Markua\Block\Parser;
 
 use League\CommonMark\Block\Parser\AbstractBlockParser;
 use League\CommonMark\ContextInterface;
 use League\CommonMark\Cursor;
-use League\Markua\Block\Element\IconBlock;
+use Danhunsaker\Markua\Block\Element\IconBlock;
 
 class IconBlockParser extends AbstractBlockParser
 {
@@ -36,7 +37,7 @@ class IconBlockParser extends AbstractBlockParser
         }
 
         $type = $cursor->getNextNonSpaceCharacter();
-        
+
         $cursor->advanceToNextNonSpaceOrNewline();
         if ($cursor->peek() === '>') {
             $cursor->advanceBy(2);

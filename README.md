@@ -1,17 +1,17 @@
 # Markua
 
-[![Build Status](https://scrutinizer-ci.com/g/dshafik/markua/badges/build.png?b=master)](https://scrutinizer-ci.com/g/dshafik/markua/build-status/master)
-[![Code Climate](https://codeclimate.com/github/dshafik/markua/badges/gpa.svg)](https://codeclimate.com/github/dshafik/markua)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/dshafik/markua/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/dshafik/markua/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/dshafik/markua/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/dshafik/markua/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/danhunsaker/markua/badges/build.png?b=master)](https://scrutinizer-ci.com/g/danhunsaker/markua/build-status/master)
+[![Code Climate](https://codeclimate.com/github/danhunsaker/markua/badges/gpa.svg)](https://codeclimate.com/github/danhunsaker/markua)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/danhunsaker/markua/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/danhunsaker/markua/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/danhunsaker/markua/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/danhunsaker/markua/?branch=master)
 
-**league/markua** is a Markdown parser for PHP which intends to support the full [Markua] spec.  The Markua spec is [still evolving](https://leanpub.com/markua/read).
+**danhunsaker/markua** is a Markdown parser for PHP which intends to support the full [Markua] spec.  The Markua spec is [still evolving](https://leanpub.com/markua/read).
 
 ## Goals
 
 This aims to fully support the Markua specification, and will continue to evolve as the spec does.
 
-### League\CommonMark
+### League\\CommonMark
 
 This package depends on [League\CommonMark](http://commonmark.thephpleague.com) and functions identically
 except for using the Markua specification.
@@ -21,7 +21,7 @@ except for using the Markua specification.
 This project can be installed via [Composer]:
 
 ``` bash
-$ composer require league/markua
+$ composer require danhunsaker/markua
 ```
 
 ## Basic Usage
@@ -29,7 +29,7 @@ $ composer require league/markua
 The `MarkuaConverter` class provides a simple wrapper for converting Markua to HTML:
 
 ```php
-use League\Markua\MarkuaConverter;
+use Danhunsaker\Markua\MarkuaConverter;
 
 $converter = new MarkuaConverter();
 echo $converter->convertToHtml('# Hello World!');
@@ -50,7 +50,7 @@ Although the `MarkuaConverter` wrapper simplifies this process for you, advanced
 use League\CommonMark\DocParser;
 use League\CommonMark\Environment;
 use League\CommonMark\HtmlRenderer;
-use League\Markua\Environment\Markua;
+use Danhunsaker\Markua\Environment\Markua;
 
 // Obtain a pre-configured Environment with all the Markua parsers/renderers ready-to-go
 $environment = Environment::createEnvironment(new Markua());
@@ -95,7 +95,7 @@ This package is **not** part of Markua, but rather a compatible derivative.
 
 ## Documentation
 
-Documentation can be found at [markua.thephpleague.com][docs].
+TODO.
 
 ## Testing
 
@@ -126,17 +126,16 @@ Please see [CONTRIBUTING](https://github.com/thephpleague/commonmark/blob/master
 
 ## License ##
 
-**league/markua** is licensed under the BSD-3 license.  See the `LICENSE` file for more details.
+**danhunsaker/markua** is licensed under the BSD-3 license.  See the `LICENSE` file for more details.
 
 [Markua]: http://markua.org/
 [Markua spec]: https://leanpub.com/markua/read
 [John MacFarlane]: http://johnmacfarlane.net
 [commonmark-docs]: http://commonmark.thephpleague.com/
-[docs]: http://markua.thephpleague.com/
 [docs-examples]: http://commonmark.thephpleague.com/customization/overview/#examples
 [docs-example-twitter]: http://commonmark.thephpleague.com/customization/inline-parsing#example-1---twitter-handles
 [docs-example-smilies]: http://commonmark.thephpleague.com/customization/inline-parsing#example-2---emoticons
-[All Contributors]: https://github.com/thephpleague/markua/contributors
+[All Contributors]: https://github.com/danhunsaker/markua/contributors
 [@colinodell]: https://github.com/colinodell
 [@jgm]: https://github.com/jgm
 [jgm/stmd]: https://github.com/jgm/stmd

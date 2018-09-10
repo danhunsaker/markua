@@ -4,6 +4,7 @@
  * This file is part of the league/markua package.
  *
  * (c) Davey Shafik <me@daveyshafik.com>
+ * (c) Dan Hunsaker <danhunsaker+markua@gmail.com>
  *
  * Original code based on the CommonMark JS reference parser (http://bitly.com/commonmarkjs)
  *  - (c) John MacFarlane
@@ -12,7 +13,7 @@
  * file that was distributed with this source code.
  */
 
-namespace League\Markua\Block\Element;
+namespace Danhunsaker\Markua\Block\Element;
 
 use League\CommonMark\Cursor;
 

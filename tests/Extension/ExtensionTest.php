@@ -4,6 +4,7 @@
  * This file is part of the league/markua package.
  *
  * (c) Davey Shafik <me@daveyshafik.com>
+ * (c) Dan Hunsaker <danhunsaker+markua@gmail.com>
  *
  * Original code based on the CommonMark JS reference parser (http://bitly.com/commonmarkjs)
  *  - (c) John MacFarlane
@@ -12,10 +13,10 @@
  * file that was distributed with this source code.
  */
 
-namespace League\Markua\Tests;
+namespace Danhunsaker\Markua\Tests;
 
-use League\Markua\Extension\MarkuaExtension;
-use League\Markua\MarkuaConverter;
+use Danhunsaker\Markua\Extension\MarkuaExtension;
+use Danhunsaker\Markua\MarkuaConverter;
 
 class ExtensionTest extends \PHPUnit_Framework_TestCase {
     public function testGetExtensionName()

@@ -4,6 +4,7 @@
  * This file is part of the league/markua package.
  *
  * (c) Davey Shafik <me@daveyshafik.com>
+ * (c) Dan Hunsaker <danhunsaker+markua@gmail.com>
  *
  * Original code based on the CommonMark JS reference parser (http://bitly.com/commonmarkjs)
  *  - (c) John MacFarlane
@@ -12,13 +13,13 @@
  * file that was distributed with this source code.
  */
 
-namespace League\Markua;
+namespace Danhunsaker\Markua;
 
 use League\CommonMark\CommonMarkConverter;
 use League\CommonMark\DocParser;
 use League\CommonMark\Environment;
 use League\CommonMark\HtmlRenderer;
-use League\Markua\Extension\MarkuaExtension;
+use Danhunsaker\Markua\Extension\MarkuaExtension;
 
 /**
  * Converts Markua-compatible Markdown to HTML.
